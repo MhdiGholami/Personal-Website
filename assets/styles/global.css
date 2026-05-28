@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Sora';
+    src: url(../../assets/fonts/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwWa-xsaQ\ \(1\).woff2);
+}
+
+@media only screen and (min-width: 1440px) {
+    .have-chat {
+        font-size: 122px;
+    }
+}
+
+* {
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #8750f7 #2a1454;
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sidebar-parent {
+    transform: translateX(101%);
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.font-sora {
+    font-family: 'Sora';
+}
+
+.gradient {
+    color: linear-gradient(260deg, #8750f7 0%, #8750f7 100%);
+}
+
+.bg-gradient {
+    background: linear-gradient(260deg, #8750f7 0%, #8750f7 100%);
+}
+
+.before-socials {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8750f7;
+    transform: scale(0);
+    transition: 0.3s;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.profile::before {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(260deg, #8750f7 0%, #8750f7 100%);
+    z-index: 90;
+}
+
+.swiper-pagination>.swiper-pagination-bullet {
+    background-color: rgb(55, 55, 55);
+    opacity: 1;
+}
+
+.swiper-pagination>.swiper-pagination-bullet-active {
+    background-color: #8750f7;
+}
+
+.active {
+    display: flex;
+}
+
+.active-color {
+    background-color: #2a1454;
+}
+
+.active-scrollBtn {
+    display: none;
+}
+
+.hide {
+    transform: translateY(-400px);
+}
+
+#scroll-button circle {
+    fill: none;
+    stroke: #8750f7;
+    stroke-width: 3;
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    transition: stroke-dashoffset 0.2s linear;
+    cx: 22;
+    cy: 22;
+    r: 22;
+}
+
+.portfolioImage-filter{
+    filter: brightness(60%) grayscale(50%);
+}
