@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mahdi Gholami Front-end Developer</title>
+
+    <!-- CSS link -->
+    <link href="../../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/styles/global.css">
+
+    <!-- Awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Flaticon cdn link -->
+    <!-- <link rel="stylesheet" href="https://cdn.flaticon.com/path-to-your-icon-font.css"> -->
+
+    <!-- Swiper CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <!-- Swiper JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+</head>
+
+<body class="w-full h-auto bg-primary-600 relative">
+    <!-- Scroll top button -->
+    <div id="scroll-button"
+        class="w-[45px] h-[45px] hidden justify-center items-center cursor-pointer fixed z-50 bottom-[4%] right-[2%] active-scrollBtn rounded-[50%] border-2 border-theme-secondary">
+        <svg class="w-[44px] h-[44px] flex justify-center items-center -rotate-90 absolute rounded-[50%]">
+            <circle class="z-50"></circle>
+        </svg>
+        <i class="fa-solid fa-arrow-up text-primary"></i>
+    </div>
+    <!-- Sticky header -->
+    <header id="sticky-header"
+        class="w-full flex justify-center items-center bg-black transition-all duration-500 fixed z-50 hide">
+        <div class="md:w-[90%] lg:w-[90%] xl:w-[85%] w-[93%]">
+            <div class="w-full flex justify-between items-center py-4">
+                <div class="w-[6%] lg:w-[7%]">
+                    <figure class="w-[60px] h-[60px]">
+                        <img class="w-full object-cover" src="../../assets/images/website-logo.png" alt="">
+                    </figure>
+                </div>
+
+                <div class="w-[45%] lg:w-[60%] lg:flex hidden justify-end items-center">
+                    <ul class="w-[80%] flex gap-10">
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="index.html">Home</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="index.html#section3">Projects</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="index.html#section4">Resume</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="index.html#section5">Skills</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="">About</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="pages/contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="w-[30%] lg:w-[25%] lg:flex hidden justify-end items-center">
+                    <ul class="w-[65%] lg:w-[68%] flex justify-evenly items-center gap-2">
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://www.facebook.com/">
+                                <i
+                                    class="fa-brands fa-facebook-f fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://www.linkedin.com/in/mahdi-gholami-developer/">
+                                <i
+                                    class="fa-brands fa-linkedin-in fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://github.com/MhdiGholami">
+                                <i
+                                    class="fa-brands fa-github fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://www.instagram.com/mahdi_gholami_web/profilecard/?igsh=OGJ0YWlmZWh0YnN1">
+                                <i
+                                    class="fa-brands fa-instagram fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ** -->
+                <div class="sm:w-[15%] lg:w-[8%] w-[27%] flex justify-end items-center">
+                    <!-- <div class="flex items-center gap-4">
+                        <span class="font-[500] text-[18px] text-white cursor-pointer">فا</span>
+                        <div class="cursor-pointer">
+                            <i id="changethemIcon" class="fa-regular fa-sun fa-lg text-white" data-theme="false"></i>
+                        </div>
+                    </div> -->
+                    <div class="lg:hidden flex">
+                        <i id="openStickyNavbar" class="fa fa-navicon fa-2xl cursor-pointer transition text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Fixed header -->
+    <header class="w-full flex justify-center items-center absolute z-20">
+        <div class="md:w-[90%] lg:w-[90%] xl:w-[85%] w-[93%]">
+            <div class="w-full flex justify-between items-center sm:pt-10 pt-5">
+                <div class="w-[6%] lg:w-[7%]">
+                    <figure class="w-[60px] h-[60px]">
+                        <img class="w-full object-cover" src="../../assets/images/website-logo.png" alt="">
+                    </figure>
+                </div>
+
+                <div class="w-[45%] lg:w-[60%] lg:flex hidden justify-end items-center">
+                    <ul class="w-[80%] flex gap-10">
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="index.html">Home</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="index.html#section3">Projects</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="index.html#section4">Resume</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="index.html#section5">Skills</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="">About</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="pages/contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="w-[30%] lg:w-[25%] lg:flex hidden justify-end items-center">
+                    <ul class="w-[65%] lg:w-[68%] flex justify-evenly items-center gap-2">
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://www.facebook.com/">
+                                <i
+                                    class="fa-brands fa-facebook-f fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://www.linkedin.com/in/mahdi-gholami-developer/">
+                                <i
+                                    class="fa-brands fa-linkedin-in fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://github.com/MhdiGholami">
+                                <i
+                                    class="fa-brands fa-github fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://www.instagram.com/mahdi_gholami_web/profilecard/?igsh=OGJ0YWlmZWh0YnN1">
+                                <i
+                                    class="fa-brands fa-instagram fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ** -->
+                <div class="sm:w-[15%] lg:w-[8%] w-[27%] flex justify-end items-center">
+                    <!-- <div class="flex items-center gap-4">
+                        <span class="font-[500] text-[18px] text-white cursor-pointer">فا</span>
+                        <div class="cursor-pointer">
+                            <i id="changethemIcon" class="fa-regular fa-sun fa-lg text-white" data-theme="false"></i>
+                        </div>
+                    </div> -->
+                    <div class="lg:hidden flex">
+                        <i id="openNavbar" class="fa fa-navicon fa-2xl cursor-pointer transition text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main website codes -->
+    <main class="w-full">
+        <!-- mobile & tablet sidebar menu -->
+        <div
+            class="sidebar-parent w-full h-[100vh] flex justify-end fixed z-50 transition duration-300 ease-in top-0 right-0 lg:hidden">
+            <!-- sidebar -->
+            <div class="md:w-[30%] w-[45%] flex flex-col items-center bg-theme-accent-1 gap-5">
+                <!-- close button row -->
+                <div class="w-[80%] flex justify-end items-center py-6">
+                    <!-- close button -->
+                    <div class="">
+                        <i id="closeNavbar" class="fa-solid fa-xmark fa-xl text-white"></i>
+                    </div>
+                </div>
+                <!-- links pages row -->
+                <div class="w-[80%]">
+                    <div class="w-full flex justify-end text-right">
+                        <ul class="flex flex-col gap-6">
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="index.html">Home</a></li>
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="index.html#section3">Projects</a></li>
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="index.html#section4">Resume</a></li>
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="index.html#section5">Skills</a></li>
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="">About</a></li>
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="pages/contact/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Profile Section -->
+        <section id="section1"
+            class="w-full flex justify-center items-center bg-theme-accent-1 pt-[130px] md:pt-[150px] lg:pt-[220px] pb-[85px] relative md:before:z-0 before:-z-10 before:content-[''] before:absolute before:w-[322px] before:h-[308px] before:rounded-[50%] before:blur-[150px] before:top-0 before:right-0 before:mt-[-5%] before:me-[-2%] overflow-hidden before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)]">
+            <!-- container -->
+            <div class="md:w-[90%] lg:w-[85%] w-[93%] md:flex">
+                <!-- mobile design -->
+                <div class="w-full md:hidden">
+                    <span class="w-full text-white sm:text-[24px] md:text-[36px] text-[22px] font-[700] mb-4">Hi, I am
+                        Mahdi Gholami.</span>
+                    <h1
+                        class="w-full lg:text-[60px] text-[32px] font-[700] leading-tight bg-[linear-gradient(to_right,#8750f7_0%,#ffffff_100%)] text-transparent bg-clip-text pb-8">
+                        A creative designer <br> based in Tehran</h1>
+                </div>
+                <!-- profile image side -->
+                <div class="md:w-[45%] w-full flex md:justify-start lg:justify-center justify-center items-center">
+                    <div class="xl:w-[75%] w-[90%] rounded-[50%]">
+                        <img class="w-full object-cover rounded-[50%] border-2 border-theme-secondary transition duration-300 cursor-pointer hover:border-2 hover:border-primary"
+                            src="../../assets/images/profile-photo.jpg" alt="">
+                    </div>
+                </div>
+                <!-- profile details side -->
+                <div class="md:w-[55%] w-full flex justify-center items-center">
+                    <div class="w-[90%]">
+                        <span
+                            class="w-full hidden md:flex text-white lg:text-[36px] text-[28px] font-[700] lg:mb-3 mb-0">Hi,
+                            I am Mahdi Gholami.</span>
+                        <h1
+                            class="w-full hidden md:flex lg:text-[60px] text-[32px] font-[700] leading-tight bg-[linear-gradient(to_right,#8750f7_0%,#ffffff_100%)] text-transparent bg-clip-text mb-8">
+                            A creative frontend developer
+                            <!-- <br> based in Tehran -->
+                        </h1>
+                        <p class="w-full text-white text-[20px] font-[300] py-6">
+                            Hi!👋
+                            I'm a front-end developer with professional experience since 2023.
+                            I specialize in creating modern, creative, and responsive websites that work great on all
+                            devices.
+                            I build fast, user-friendly, and visually appealing sites for startups, online stores, and
+                            personal brands.
+                            If you're looking for a professional website, I'd be happy to work with you! 🌟
+                        </p>
+                        <div class="w-full sm:flex block gap-6">
+                            <div class="2xl:w-[32%] w-[65%] pb-4">
+                                <a class="w-full flex justify-center items-center decoration-0 gap-2 text-white lg:text-[16px] text-[14px] leading-none font-[500] transform duration-500 tracking-widest capitalize border border-white rounded-[50px] px-[35px] py-[17px] sm:m-0 hover:bg-primary hover:border-primary"
+                                    href="#">my resume <i class="fa-solid fa-download"></i></a>
+                            </div>
+                            <div class="2xl:w-[24%] w-[45%]">
+                                <a class="w-full flex justify-center items-center decoration-0 text-white lg:text-[16px] text-[14px] leading-none font-[700] transform duration-500 capitalize bg-[linear-gradient(to_right,#8750f7_0%,#2a1454_51%,#8750f7_100%)] bg-[length:200%] border-none rounded-[50px] px-[35px] py-[17px] hover:bg-[linear-gradient(to_right,#8750f7_0%,#2a1454_51%,#8750f7_100%)] hover:scale-110"
+                                    href="../contact/contact.html">lets talk!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Infinite repeat roll -->
+        <div class="w-full flex justify-center items-center bg-theme-accent-1 overflow-x-clip py-14 relative">
+            <div class="w-[105%] flex border bg-black -rotate-3 py-10 absolute gap-14">
+                <!-- item -->
+                <div class="xl:w-[10%] flex justify-between items-center">
+                    <div class="w-[20px] h-[20px] hidden xl:flex">
+                        <img class="w-full h-full object-cover" src="../../assets/images/marquee-icon.webp" alt="">
+                    </div>
+                    <div class="">
+                        <h5 class="text-white lg:text-[20px] text-[16px] tracking-wide font-[800] uppercase">graphic
+                        </h5>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="xl:w-[10%] flex justify-between items-center">
+                    <div class="w-[20px] h-[20px] hidden xl:flex">
+                        <img class="w-full h-full object-cover" src="../../assets/images/marquee-icon.webp" alt="">
+                    </div>
+                    <div class="">
+                        <h5 class="text-white lg:text-[20px] text-[16px] tracking-wide font-[800] uppercase">motion</h5>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="xl:w-[15%] flex justify-between items-center">
+                    <div class="w-[20px] h-[20px] hidden xl:flex">
+                        <img class="w-full h-full object-cover" src="../../assets/images/marquee-icon.webp" alt="">
+                    </div>
+                    <div class="">
+                        <h5 class="text-white lg:text-[20px] text-[16px] tracking-wide font-[800] uppercase">development
+                        </h5>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="xl:w-[10%] flex justify-between items-center">
+                    <div class="w-[20px] h-[20px] hidden xl:flex">
+                        <img class="w-full h-full object-cover" src="../../assets/images/marquee-icon.webp" alt="">
+                    </div>
+                    <div class="">
+                        <h5 class="text-white lg:text-[20px] text-[16px] tracking-wide font-[800] uppercase">design</h5>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="xl:w-[12%] flex justify-between items-center">
+                    <div class="w-[20px] h-[20px] hidden xl:flex">
+                        <img class="w-full h-full object-cover" src="../../assets/images/marquee-icon.webp" alt="">
+                    </div>
+                    <div class="">
+                        <h5 class="text-white lg:text-[20px] text-[16px] tracking-wide font-[800] uppercase">webflow
+                        </h5>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="xl:w-[12%] flex justify-between items-center">
+                    <div class="w-[20px] h-[20px] hidden xl:flex">
+                        <img class="w-full h-full object-cover" src="../../assets/images/marquee-icon.webp" alt="">
+                    </div>
+                    <div class="">
+                        <h5 class="text-white lg:text-[20px] text-[16px] tracking-wide font-[800] uppercase">developer
+                        </h5>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="xl:w-[10%] flex justify-between items-center">
+                    <div class="w-[20px] h-[20px] hidden xl:flex">
+                        <img class="w-full h-full object-cover" src="../../assets/images/marquee-icon.webp" alt="">
+                    </div>
+                    <div class="">
+                        <h5 class="text-white lg:text-[20px] text-[16px] tracking-wide font-[800] uppercase">website
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services Section -->
+        <section id="section2" class="w-full flex justify-center items-center bg-theme-accent-1 py-32">
+            <!-- container -->
+            <div class="md:w-[90%] lg:w-[85%] w-[90%]">
+                <!-- Services title -->
+                <div class="w-full flex justify-center items-center pb-16">
+                    <div class="text-center">
+                        <h2
+                            class="lg:text-[45px] text-[38px] bg-[linear-gradient(to_right,#8750f7_0%,#ffffff_100%)] text-transparent font-[700] leading-none bg-clip-text capitalize">
+                            services</h2>
+                        <p class="text-white text-[16px] leading-none uppercase pt-4">Offered Services</p>
+                    </div>
+                </div>
+                <!-- Services cards -->
+                <div class="w-full lg:grid lg:grid-cols-2 flex flex-col gap-8">
+                    <!-- card -->
+                    <div
+                        class="w-full flex justify-center items-center transition duration-500 border border-primary rounded-[15px] py-6 hover:border-white hover:bg-primary group">
+                        <div class="w-[88%]">
+                            <div class="w-full pb-8">
+                                <i
+                                    class="fa-solid fa-code fa-xl text-primary group-hover:text-white transition duration-500"></i>
+                            </div>
+                            <div class="w-full">
+                                <h5 class="cursor-pointer"><a
+                                        class="text-[22px] text-white font-[700] decoration-0 border-none" href="">Web
+                                        Development</a></h5>
+                                <p class="text-white text-[18px] pt-2">Conducting qualitative and quantitative research
+                                    to understand user needs, behaviors, and pain points. Utilizing methods such as
+                                    surveys, interviews, and usability testing...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div
+                        class="w-full flex justify-center items-center transition duration-500 border border-primary rounded-[15px] py-6 hover:border-white hover:bg-primary group">
+                        <div class="w-[88%]">
+                            <div class="w-full pb-8">
+                                <i
+                                    class="fa-solid fa-wand-magic-sparkles fa-xl text-primary group-hover:text-white transition duration-500"></i>
+                            </div>
+                            <div class="w-full">
+                                <h5 class="cursor-pointer"><a
+                                        class="text-[22px] text-white font-[700] decoration-0 border-none" href="">UI/UX
+                                        Design</a></h5>
+                                <p class="text-white text-[18px] pt-2">Conducting qualitative and quantitative research
+                                    to understand user needs, behaviors, and pain points. Utilizing methods such as
+                                    surveys, interviews, and usability testing...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div
+                        class="w-full flex justify-center items-center transition duration-500 border border-primary rounded-[15px] py-6 hover:border-white hover:bg-primary group">
+                        <div class="w-[88%]">
+                            <div class="w-full pb-8">
+                                <i
+                                    class="fa-solid fa-marker fa-xl text-primary group-hover:text-white transition duration-500"></i>
+                            </div>
+                            <div class="w-full">
+                                <h5 class="cursor-pointer"><a
+                                        class="text-[22px] text-white font-[700] decoration-0 border-none"
+                                        href="">Content Writing</a></h5>
+                                <p class="text-white text-[18px] pt-2">Conducting qualitative and quantitative research
+                                    to understand user needs, behaviors, and pain points. Utilizing methods such as
+                                    surveys, interviews, and usability testing...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div
+                        class="w-full flex justify-center items-center transition duration-500 border border-primary rounded-[15px] py-6 hover:border-white hover:bg-primary group">
+                        <div class="w-[88%]">
+                            <div class="w-full pb-8">
+                                <i
+                                    class="fa-solid fa-magnifying-glass-dollar fa-xl text-primary group-hover:text-white transition duration-500"></i>
+                            </div>
+                            <div class="w-full">
+                                <h5 class="cursor-pointer"><a
+                                        class="text-[22px] text-white font-[700] decoration-0 border-none"
+                                        href="">Digital Marketing</a></h5>
+                                <p class="text-white text-[18px] pt-2">Conducting qualitative and quantitative research
+                                    to understand user needs, behaviors, and pain points. Utilizing methods such as
+                                    surveys, interviews, and usability testing...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Recent Works Section -->
+        <section id="section3" class="w-full flex justify-center items-center py-24">
+            <!-- container -->
+            <div class="xl:w-[85%] w-[90%]">
+                <!-- Recent Works title -->
+                <div class="w-full flex justify-center items-center pb-16">
+                    <div class="text-center">
+                        <h2
+                            class="lg:text-[42px] text-[32px] bg-[linear-gradient(to_right,#8750f7_0%,#ffffff_100%)] text-transparent font-[700] leading-none bg-clip-text capitalize">
+                            My Recent Works</h2>
+                        <p class="text-white text-[16px] leading-none uppercase pt-4">recent projects</p>
+                    </div>
+                </div>
+                <!-- Recent Works cards -->
+                <div class="w-full flex justify-center items-center">
+                    <div class="xl:w-[88%] flex flex-col gap-12">
+                        <!-- card -->
+                        <div
+                            class="w-full flex justify-center rounded-[15px] bg-theme-accent-1 border border-primary py-12">
+                            <!-- container -->
+                            <div class="w-[94%] lg:flex block justify-between">
+                                <!-- left side -->
+                                <div class="lg:w-[38%] w-full flex flex-col xl:gap-10 gap-6 lg:p-0 pb-10">
+                                    <!-- row 1 -->
+                                    <div class="w-full">
+                                        <span class="text-primary text-[18px] font-[400] capitalize">branding</span>
+                                        <h3 class="py-1"><a
+                                                class="text-white text-[34px] font-[700] transition-all duration-500 ease-in-out capitalize hover:text-primary"
+                                                href="">deloitte</a></h3>
+                                        <p class="text-grey-3 text-[18px] pt-2">Project was about precision and
+                                            information.
+                                            That’s all. Our design tem helps clients achieve their marketing Trager and
+                                            branding that appeals to a website</p>
+                                    </div>
+                                    <!-- row 2 -->
+                                    <div class="w-full">
+                                        <ul class="w-full flex flex-col gap-3">
+                                            <li class="w-full flex lg:justify-between items-center">
+                                                <i class="fa-solid fa-check lg:w-[10%] w-[7%] text-grey-3"></i>
+                                                <span class="w-[90%] text-grey-3 text-[18px]">We provide the most
+                                                    reasonable.</span>
+                                            </li>
+                                            <li class="w-full flex lg:justify-between items-center">
+                                                <i class="fa-solid fa-check lg:w-[10%] w-[7%] text-grey-3"></i>
+                                                <span class="w-[90%] text-grey-3 text-[18px]">Finish Work Before
+                                                    Deadline.</span>
+                                            </li>
+                                            <li class="w-full flex lg:justify-between items-center">
+                                                <i class="fa-solid fa-check lg:w-[10%] w-[7%] text-grey-3"></i>
+                                                <span class="w-[90%] text-grey-3 text-[18px]">The certified materials in
+                                                    a
+                                                    timely.</span>
+                                            </li>
+                                            <li class="w-full flex lg:justify-between items-center">
+                                                <i class="fa-solid fa-check lg:w-[10%] w-[7%] text-grey-3"></i>
+                                                <span class="w-[90%] text-grey-3 text-[18px]">We provide 24/7 on time
+                                                    services</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- row 3 -->
+                                    <div class="w-full">
+                                        <ul
+                                            class="xl:w-[95%] w-full grid grid-cols-2 max-w-[350px] lg:flex lg:justify-between justify-start items-center lg:gap-0 gap-4">
+                                            <li
+                                                class="flex justify-center items-center rounded-[25px] bg-theme-secondary cursor-pointer transition-all duration-500 ease-in-out hover:bg-primary">
+                                                <a class="w-full h-full flex justify-center items-center text-grey-3 font-[400] decoration-0 leading-none rounded-[25px] py-2 px-3"
+                                                    href="">Branding</a>
+                                            </li>
+                                            <li
+                                                class="flex justify-center items-center rounded-[25px] bg-theme-secondary cursor-pointer transition-all duration-500 ease-in-out hover:bg-primary">
+                                                <a class="w-full h-full flex justify-center items-center text-grey-3 font-[400] decoration-0 leading-none rounded-[25px] py-2 px-3"
+                                                    href="">Graphic Design</a>
+                                            </li>
+                                            <li
+                                                class="flex justify-center items-center rounded-[25px] bg-theme-secondary cursor-pointer transition-all duration-500 ease-in-out hover:bg-primary">
+                                                <a class="w-full h-full flex justify-center items-center text-grey-3 font-[400] decoration-0 leading-none rounded-[25px] py-2 px-3"
+                                                    href="">User Stories</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- row 4 -->
+                                    <div class="w-full flex items-center gap-4 group">
+                                        <a class="text-grey-3 transition-all duration-300 group-hover:text-primary"
+                                            href="">View Live Project </a>
+                                        <i class="fa-solid fa-arrow-up fa-rotate-by text-grey-3 transition-all duration-300 group-hover:text-primary"
+                                            style="--fa-rotate-angle: 45deg;"></i>
+                                    </div>
+                                </div>
+                                <!-- right side -->
+                                <div class="lg:w-[57%] w-full">
+                                    <div
+                                        class="w-full h-full flex justify-center items-center bg-bg-3 rounded-[10px] p-4">
+                                        <img class="w-full object-cover" src="../../assets/images/portfolio-3.webp"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div
+                            class="w-full flex justify-center rounded-[15px] bg-theme-accent-1 border border-primary py-12">
+                            <!-- container -->
+                            <div class="w-[94%] lg:flex block justify-between">
+                                <!-- left side -->
+                                <div class="lg:w-[38%] w-full flex flex-col xl:gap-10 gap-6 lg:p-0 pb-10">
+                                    <!-- row 1 -->
+                                    <div class="w-full">
+                                        <span class="text-primary text-[18px] font-[400] capitalize">UX/UI</span>
+                                        <h3 class="py-1"><a
+                                                class="text-white text-[34px] font-[700] transition-all duration-500 ease-in-out capitalize hover:text-primary"
+                                                href="">New Age</a></h3>
+                                        <p class="text-grey-3 text-[18px] pt-2">Project was about precision and
+                                            information.
+                                            That’s all. Our design tem helps clients achieve their marketing Trager and
+                                            branding that appeals to a website</p>
+                                    </div>
+                                    <!-- row 2 -->
+                                    <div class="w-full">
+                                        <ul class="w-full flex flex-col gap-3">
+                                            <li class="w-full flex lg:justify-between items-center">
+                                                <i class="fa-solid fa-check lg:w-[10%] w-[7%] text-grey-3"></i>
+                                                <span class="w-[90%] text-grey-3 text-[18px]">We provide the most
+                                                    reasonable.</span>
+                                            </li>
+                                            <li class="w-full flex lg:justify-between items-center">
+                                                <i class="fa-solid fa-check lg:w-[10%] w-[7%] text-grey-3"></i>
+                                                <span class="w-[90%] text-grey-3 text-[18px]">Finish Work Before
+                                                    Deadline.</span>
+                                            </li>
+                                            <li class="w-full flex lg:justify-between items-center">
+                                                <i class="fa-solid fa-check lg:w-[10%] w-[7%] text-grey-3"></i>
+                                                <span class="w-[90%] text-grey-3 text-[18px]">The certified materials in
+                                                    a
+                                                    timely.</span>
+                                            </li>
+                                            <li class="w-full flex lg:justify-between items-center">
+                                                <i class="fa-solid fa-check lg:w-[10%] w-[7%] text-grey-3"></i>
+                                                <span class="w-[90%] text-grey-3 text-[18px]">We provide 24/7 on time
+                                                    services</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- row 3 -->
+                                    <div class="w-full">
+                                        <ul
+                                            class="xl:w-[95%] w-full grid grid-cols-2 max-w-[350px] lg:flex lg:justify-between justify-start items-center lg:gap-0 gap-4">
+                                            <li
+                                                class="flex justify-center items-center rounded-[25px] bg-theme-secondary cursor-pointer transition-all duration-500 ease-in-out hover:bg-primary">
+                                                <a class="w-full h-full flex justify-center items-center text-grey-3 font-[400] decoration-0 leading-none rounded-[25px] py-2 px-3"
+                                                    href="">Branding</a>
+                                            </li>
+                                            <li
+                                                class="flex justify-center items-center rounded-[25px] bg-theme-secondary cursor-pointer transition-all duration-500 ease-in-out hover:bg-primary">
+                                                <a class="w-full h-full flex justify-center items-center text-grey-3 font-[400] decoration-0 leading-none rounded-[25px] py-2 px-3"
+                                                    href="">Graphic Design</a>
+                                            </li>
+                                            <li
+                                                class="flex justify-center items-center rounded-[25px] bg-theme-secondary cursor-pointer transition-all duration-500 ease-in-out hover:bg-primary">
+                                                <a class="w-full h-full flex justify-center items-center text-grey-3 font-[400] decoration-0 leading-none rounded-[25px] py-2 px-3"
+                                                    href="">User Stories</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- row 4 -->
+                                    <div class="w-full flex items-center gap-4 group">
+                                        <a class="text-grey-3 transition-all duration-300 group-hover:text-primary"
+                                            href="">View Live Project </a>
+                                        <i class="fa-solid fa-arrow-up fa-rotate-by text-grey-3 transition-all duration-300 group-hover:text-primary"
+                                            style="--fa-rotate-angle: 45deg;"></i>
+                                    </div>
+                                </div>
+                                <!-- right side -->
+                                <div class="lg:w-[57%] w-full">
+                                    <div
+                                        class="w-full h-full flex justify-center items-center bg-bg-3 rounded-[10px] p-4">
+                                        <img class="w-full object-cover" src="../../assets/images/portfolio-4.webp"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Years of Experience row -->
+        <div class="w-full flex justify-center items-center bg-theme-accent-1 py-24">
+            <!-- container -->
+            <div
+                class="md:w-[90%] lg:w-[85%] w-[90%] xl:flex grid grid-cols-2 xl:justify-between xl:items-center gap-10">
+                <!-- item -->
+                <div class="sm:flex gap-4">
+                    <div class="flex justify-center items-center">
+                        <span class="text-white md:text-[64px] text-[52px] font-[700] leading-none">14</span>
+                    </div>
+                    <div class="flex justify-center items-center text-grey-3 text-[18px] text-center sm:text-start">
+                        Years of <br>
+                        Experience
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="sm:flex gap-4">
+                    <div class="flex justify-center items-center">
+                        <span class="text-white md:text-[64px] text-[52px] font-[700] leading-none">50+</span>
+                    </div>
+                    <div class="flex justify-center items-center text-grey-3 text-[18px] text-center sm:text-start">
+                        Project <br>
+                        Compeleted
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="sm:flex gap-4">
+                    <div class="flex justify-center items-center">
+                        <span class="text-white md:text-[64px] text-[52px] font-[700] leading-none">1.5k</span>
+                    </div>
+                    <div class="flex justify-center items-center text-grey-3 text-[18px] text-center sm:text-start">
+                        Happy <br>
+                        Clients
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="sm:flex gap-4">
+                    <div class="flex justify-center items-center">
+                        <span class="text-white md:text-[64px] text-[52px] font-[700] leading-none">14</span>
+                    </div>
+                    <div class="flex justify-center items-center text-grey-3 text-[18px] text-center sm:text-start">
+                        Years of <br>
+                        Experience
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- My Resume Section -->
+        <section id="section4" class="w-full flex justify-center items-center py-32">
+            <!-- container -->
+            <div class="xl:w-[85%] md:w-[95%] w-[90%]">
+                <!-- My Resume title -->
+                <div class="w-full flex justify-center items-center pb-22">
+                    <div class="text-center">
+                        <h2
+                            class="lg:text-[48px] text-[32px] bg-[linear-gradient(to_right,#8750f7_0%,#ffffff_100%)] text-transparent font-[700] leading-none bg-clip-text capitalize">
+                            My Resume
+                        </h2>
+                    </div>
+                </div>
+                <!-- My Resume content -->
+                <div class="w-full md:flex block justify-between items-start">
+                    <!-- // -->
+                    <!-- Education side -->
+                    <div class="md:w-[48%] sm:w-[50%] w-full flex flex-col gap-11 pb-10 md:pb-0">
+                        <!-- Education title -->
+                        <div class="w-full flex justify-start items-center">
+                            <h3 class="text-white md:text-[40px] text-[32px] font-[500] capitalize">Education</h3>
+                        </div>
+                        <!-- Education content -->
+                        <div class="w-full">
+                            <!-- item -->
+                            <div class="w-full flex border-l-2 border-gray-600">
+                                <div class="w-[5%] flex justify-start items-center">
+                                    <div
+                                        class="w-[12px] h-[12px] rounded-[50%] bg-gray-600 -translate-x-1.5 -translate-y-9 z-10">
+                                    </div>
+                                </div>
+                                <div class="w-[95%] flex gap-5 pb-8">
+                                    <div
+                                        class="w-[57px] h-[57px] flex justify-center items-center rounded-[50%] bg-theme-secondary">
+                                        <i class="fa-solid fa-graduation-cap fa-lg text-white"></i>
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="md:text-[22px] text-[18px] text-primary font-[700] tracking-wider">
+                                            2022 - Present</div>
+                                        <h5
+                                            class="md:text-[22px] text-[18px] text-white font-[700] tracking-wider uppercase">
+                                            Lead Developer</h5>
+                                        <span class="text-grey-3 font-[700] tracking-wider">Blockdots, London</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="w-full flex border-l-2 border-gray-600">
+                                <div class="w-[5%] flex justify-start items-center">
+                                    <div
+                                        class="w-[12px] h-[12px] rounded-[50%] bg-gray-600 -translate-x-1.5 -translate-y-9 z-10">
+                                    </div>
+                                </div>
+                                <div class="w-[95%] flex gap-5 pb-8">
+                                    <div
+                                        class="w-[57px] h-[57px] flex justify-center items-center rounded-[50%] bg-theme-secondary">
+                                        <i class="fa-solid fa-graduation-cap fa-lg text-white"></i>
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="md:text-[22px] text-[18px] text-primary font-[700] tracking-wider">
+                                            2021 - 2022</div>
+                                        <h5
+                                            class="md:text-[22px] text-[18px] text-white font-[700] tracking-wider uppercase">
+                                            Full Stack Web Developer</h5>
+                                        <span class="text-grey-3 font-[700] tracking-wider">Parsons, The New
+                                            School</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="w-full flex border-l-2 border-gray-600">
+                                <div class="w-[5%] flex justify-start items-center">
+                                    <div
+                                        class="w-[12px] h-[12px] rounded-[50%] bg-gray-600 -translate-x-1.5 -translate-y-9 z-10">
+                                    </div>
+                                </div>
+                                <div class="w-[95%] flex gap-5 pb-8">
+                                    <div
+                                        class="w-[57px] h-[57px] flex justify-center items-center rounded-[50%] bg-theme-secondary">
+                                        <i class="fa-solid fa-graduation-cap fa-lg text-white"></i>
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="md:text-[22px] text-[18px] text-primary font-[700] tracking-wider">
+                                            2020 - 2021</div>
+                                        <h5
+                                            class="md:text-[22px] text-[18px] text-white font-[700] tracking-wider uppercase">
+                                            UI Designer</h5>
+                                        <span class="text-grey-3 font-[700] tracking-wider">House of Life, Leeds</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="w-full flex border-l-2 border-gray-600">
+                                <div class="w-[5%] flex justify-start items-center">
+                                    <div
+                                        class="w-[12px] h-[12px] rounded-[50%] bg-gray-600 -translate-x-1.5 -translate-y-9 z-10">
+                                    </div>
+                                </div>
+                                <div class="w-[95%] flex gap-5 pb-8">
+                                    <div
+                                        class="w-[57px] h-[57px] flex justify-center items-center rounded-[50%] bg-theme-secondary">
+                                        <i class="fa-solid fa-graduation-cap fa-lg text-white"></i>
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="md:text-[22px] text-[18px] text-primary font-[700] tracking-wider">
+                                            2018 - 2020</div>
+                                        <h5
+                                            class="md:text-[22px] text-[18px] text-white font-[700] tracking-wider uppercase">
+                                            Junior Graphics Designer</h5>
+                                        <span class="text-grey-3 font-[700] tracking-wider">Theme Junction, Bursa</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // -->
+                    <!-- Work Experience side -->
+                    <div class="md:w-[48%] sm:w-[50%] w-full flex flex-col gap-11">
+                        <!-- Work Experience title -->
+                        <div class="w-full flex justify-start items-center">
+                            <h3 class="text-white md:text-[40px] text-[32px] font-[500] capitalize">Work Experience</h3>
+                        </div>
+                        <!-- Work Experience content -->
+                        <div class="w-full">
+                            <!-- item -->
+                            <div class="w-full flex border-l-2 border-gray-600">
+                                <div class="w-[5%] flex justify-start items-center">
+                                    <div
+                                        class="w-[12px] h-[12px] rounded-[50%] bg-gray-600 -translate-x-1.5 -translate-y-9 z-10">
+                                    </div>
+                                </div>
+                                <div class="w-[95%] flex gap-5 pb-8">
+                                    <div
+                                        class="w-[57px] h-[57px] flex justify-center items-center rounded-[50%] bg-theme-secondary">
+                                        <i class="fa-solid fa-briefcase fa-lg text-white"></i>
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="md:text-[22px] text-[18px] text-primary font-[700] tracking-wider">
+                                            2020 - 2023</div>
+                                        <h5
+                                            class="md:text-[22px] text-[18px] text-white font-[700] tracking-wider uppercase">
+                                            Programming course</h5>
+                                        <span class="text-grey-3 font-[700] tracking-wider">Harverd University</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="w-full flex border-l-2 border-gray-600">
+                                <div class="w-[5%] flex justify-start items-center">
+                                    <div
+                                        class="w-[12px] h-[12px] rounded-[50%] bg-gray-600 -translate-x-1.5 -translate-y-9 z-10">
+                                    </div>
+                                </div>
+                                <div class="w-[95%] flex gap-5 pb-8">
+                                    <div
+                                        class="w-[57px] h-[57px] flex justify-center items-center rounded-[50%] bg-theme-secondary">
+                                        <i class="fa-solid fa-briefcase fa-lg text-white"></i>
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="md:text-[22px] text-[18px] text-primary font-[700] tracking-wider">
+                                            2016 - 2020</div>
+                                        <h5
+                                            class="md:text-[22px] text-[18px] text-white font-[700] tracking-wider uppercase">
+                                            Graphic design course</h5>
+                                        <span class="text-grey-3 font-[700] tracking-wider">University of Denmark</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="w-full flex border-l-2 border-gray-600">
+                                <div class="w-[5%] flex justify-start items-center">
+                                    <div
+                                        class="w-[12px] h-[12px] rounded-[50%] bg-gray-600 -translate-x-1.5 -translate-y-9 z-10">
+                                    </div>
+                                </div>
+                                <div class="w-[95%] flex gap-5 pb-8">
+                                    <div
+                                        class="w-[57px] h-[57px] flex justify-center items-center rounded-[50%] bg-theme-secondary">
+                                        <i class="fa-solid fa-briefcase fa-lg text-white"></i>
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="md:text-[22px] text-[18px] text-primary font-[700] tracking-wider">
+                                            2012 - 2015</div>
+                                        <h5
+                                            class="md:text-[22px] text-[18px] text-white font-[700] tracking-wider uppercase">
+                                            Web design course</h5>
+                                        <span class="text-grey-3 font-[700] tracking-wider">University of
+                                            California</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="w-full flex border-l-2 border-gray-600">
+                                <div class="w-[5%] flex justify-start items-center">
+                                    <div
+                                        class="w-[12px] h-[12px] rounded-[50%] bg-gray-600 -translate-x-1.5 -translate-y-9 z-10">
+                                    </div>
+                                </div>
+                                <div class="w-[95%] flex gap-5 pb-8">
+                                    <div
+                                        class="w-[57px] h-[57px] flex justify-center items-center rounded-[50%] bg-theme-secondary">
+                                        <i class="fa-solid fa-briefcase fa-lg text-white"></i>
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="md:text-[22px] text-[18px] text-primary font-[700] tracking-wider">
+                                            2010 - 2011</div>
+                                        <h5
+                                            class="md:text-[22px] text-[18px] text-white font-[700] tracking-wider uppercase">
+                                            Design & Technology</h5>
+                                        <span class="text-grey-3 font-[700] tracking-wider">Parsons, The New
+                                            School</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- My Skills Section -->
+        <section id="section5" class="w-full flex justify-center items-center bg-theme-accent-1 py-32">
+            <!-- container -->
+            <div class="xl:w-[78%] w-[90%]">
+                <!-- My Skills title -->
+                <div class="w-full flex justify-center items-center pb-16">
+                    <div class="text-center">
+                        <h2
+                            class="lg:text-[42px] text-[32px] bg-[linear-gradient(to_right,#8750f7_0%,#ffffff_100%)] text-transparent font-[700] leading-none bg-clip-text capitalize">
+                            My Skills</h2>
+                        <p class="text-white text-[16px] md:text-[18px] leading-none uppercase pt-4">Offered Services
+                        </p>
+                    </div>
+                </div>
+                <!-- My Skills cards -->
+                <div class="w-full flex flex-wrap gap-4 md:justify-between justify-center">
+                    <!-- card -->
+                    <div class="w-1/2 md:w-1/4 xl:w-[15%] flex flex-col gap-3">
+                        <!--  -->
+                        <div class="w-full flex flex-col rounded-[25px] transition duration-500 gap-5 group">
+                            <div
+                                class="w-full flex flex-col rounded-[25px] bg-theme-accent-2 border border-transparent transition-all duration-500 py-8 group-hover:border-primary group-hover:bg-theme-secondary gap-5">
+                                <div class="w-full flex justify-center items-center">
+                                    <img class="w-[60px] object-cover transition duration-500 filter grayscale-90 group-hover:filter-none group-hover:scale-110"
+                                        src="../../assets/images/figma.webp" alt="">
+                                </div>
+                                <div class="w-full flex justify-center items-center">
+                                    <span
+                                        class="text-[22px] text-primary font-[700] transition duration-500 filter grayscale-90 group-hover:filter-none">92%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="w-full flex justify-center items-center">
+                            <p class="text-white font-[600] capitalize">figma</p>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="w-1/2 md:w-1/4 xl:w-[15%] flex flex-col gap-3">
+                        <!--  -->
+                        <div class="w-full flex flex-col rounded-[25px] transition duration-500 gap-5 group">
+                            <div
+                                class="w-full flex flex-col rounded-[25px] bg-theme-accent-2 border border-transparent transition-all duration-500 py-8 group-hover:border-primary group-hover:bg-theme-secondary gap-5">
+                                <div class="w-full flex justify-center items-center">
+                                    <img class="w-[60px] object-cover transition duration-500 filter grayscale-90 group-hover:filter-none group-hover:scale-110"
+                                        src="../../assets/images/sketch.webp" alt="">
+                                </div>
+                                <div class="w-full flex justify-center items-center">
+                                    <span
+                                        class="text-[22px] text-primary font-[700] transition duration-500 filter grayscale-90 group-hover:filter-none">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="w-full flex justify-center items-center">
+                            <p class="text-white font-[600] capitalize">Sketch</p>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="w-1/2 md:w-1/4 xl:w-[15%] flex flex-col gap-3">
+                        <!--  -->
+                        <div class="w-full flex flex-col rounded-[25px] transition duration-500 gap-5 group">
+                            <div
+                                class="w-full flex flex-col rounded-[25px] bg-theme-accent-2 border border-transparent transition-all duration-500 py-8 group-hover:border-primary group-hover:bg-theme-secondary gap-5">
+                                <div class="w-full flex justify-center items-center">
+                                    <img class="w-[60px] object-cover transition duration-500 filter grayscale-90 group-hover:filter-none group-hover:scale-110"
+                                        src="../../assets/images/xd.webp" alt="">
+                                </div>
+                                <div class="w-full flex justify-center items-center">
+                                    <span
+                                        class="text-[22px] text-primary font-[700] transition duration-500 filter grayscale-90 group-hover:filter-none">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="w-full flex justify-center items-center">
+                            <p class="text-white font-[600] capitalize">XD</p>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="w-1/2 md:w-1/4 xl:w-[15%] flex flex-col gap-3">
+                        <!--  -->
+                        <div class="w-full flex flex-col rounded-[25px] transition duration-500 gap-5 group">
+                            <div
+                                class="w-full flex flex-col rounded-[25px] bg-theme-accent-2 border border-transparent transition-all duration-500 py-8 group-hover:border-primary group-hover:bg-theme-secondary gap-5">
+                                <div class="w-full flex justify-center items-center">
+                                    <img class="w-[60px] object-cover transition duration-500 filter grayscale-90 group-hover:filter-none group-hover:scale-110"
+                                        src="../../assets/images/wp.webp" alt="">
+                                </div>
+                                <div class="w-full flex justify-center items-center">
+                                    <span
+                                        class="text-[22px] text-primary font-[700] transition duration-500 filter grayscale-90 group-hover:filter-none">99%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="w-full flex justify-center items-center">
+                            <p class="text-white font-[600] capitalize">WordPress</p>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="w-1/2 md:w-1/4 xl:w-[15%] flex flex-col gap-3">
+                        <!--  -->
+                        <div class="w-full flex flex-col rounded-[25px] transition duration-500 gap-5 group">
+                            <div
+                                class="w-full flex flex-col rounded-[25px] bg-theme-accent-2 border border-transparent transition-all duration-500 py-8 group-hover:border-primary group-hover:bg-theme-secondary gap-5">
+                                <div class="w-full flex justify-center items-center">
+                                    <img class="w-[60px] object-cover transition duration-500 filter grayscale-90 group-hover:filter-none group-hover:scale-110"
+                                        src="../../assets/images/react.webp" alt="">
+                                </div>
+                                <div class="w-full flex justify-center items-center">
+                                    <span
+                                        class="text-[22px] text-primary font-[700] transition duration-500 filter grayscale-90 group-hover:filter-none">89%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="w-full flex justify-center items-center">
+                            <p class="text-white font-[600] capitalize">React</p>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="w-1/2 md:w-1/4 xl:w-[15%] flex flex-col gap-3">
+                        <!--  -->
+                        <div class="w-full flex flex-col rounded-[25px] transition duration-500 gap-5 group">
+                            <div
+                                class="w-full flex flex-col rounded-[25px] bg-theme-accent-2 border border-transparent transition-all duration-500 py-8 group-hover:border-primary group-hover:bg-theme-secondary gap-5">
+                                <div class="w-full flex justify-center items-center">
+                                    <img class="w-[60px] object-cover transition duration-500 filter grayscale-90 group-hover:filter-none group-hover:scale-110"
+                                        src="../../assets/images/js.webp" alt="">
+                                </div>
+                                <div class="w-full flex justify-center items-center">
+                                    <span
+                                        class="text-[22px] text-primary font-[700] transition duration-500 filter grayscale-90 group-hover:filter-none">93%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="w-full flex justify-center items-center">
+                            <p class="text-white font-[600] capitalize">JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Swipper Section -->
+        <section class="w-full flex justify-center items-center py-28">
+            <!-- container -->
+            <div class="xl:w-[85%] md:w-[95%] w-[90%]">
+                <!-- Swiper -->
+                <div class="swiper mySwiper w-full h-full">
+                    <div class="swiper-wrapper pb-12">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide text-center text-[18px] flex justify-center items-center">
+                            <div class="w-full flex justify-between items-center">
+                                <!-- card -->
+                                <div class="md:w-[49%] w-full flex flex-col bg-theme-accent-2 rounded-[15px] p-8 gap-6">
+                                    <!-- icons row -->
+                                    <div class="w-full flex justify-start items-center">
+                                        <div class="-rotate-45">
+                                            <svg class="animated" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.105431 2.18998C0.0301532 0.988687 1.02531 -0.00647222 2.2266 0.0688056L19.4961 1.15097C21.2148 1.25867 22.0029 3.34358 20.7852 4.56127L4.5979 20.7486C3.3802 21.9663 1.2953 21.1781 1.1876 19.4594L0.105431 2.18998Z"
+                                                    fill="#8750f7"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="rotate-[135deg] -translate-x-3">
+                                            <svg class="animated" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.105431 2.18998C0.0301532 0.988687 1.02531 -0.00647222 2.2266 0.0688056L19.4961 1.15097C21.2148 1.25867 22.0029 3.34358 20.7852 4.56127L4.5979 20.7486C3.3802 21.9663 1.2953 21.1781 1.1876 19.4594L0.105431 2.18998Z"
+                                                    fill="#8750f7"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- card paragraph -->
+                                    <div class="w-full">
+                                        <p class="w-full text-start text-white">Taylor is a professional Designer he
+                                            really helps my business by providing value to my business. Taylor is a
+                                            professional Designer he really helps my business by providing value to my
+                                            business. </p>
+                                    </div>
+                                    <!-- card profile -->
+                                    <div class="w-full sm:flex block gap-4">
+                                        <!-- photo -->
+                                        <div class="w-[55px] h-[55px]">
+                                            <img class="w-full h-full rounded-[50%] object-cover"
+                                                src="../../assets/images/testi-1.webp" alt="">
+                                        </div>
+                                        <!-- bio -->
+                                        <div class="text-start">
+                                            <h4 class="text-[18px] text-white font-[700]">Brandon Fraser</h4>
+                                            <span class="text-[14px] text-white">Senior Software Dev, Cosmic
+                                                Sport</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card -->
+                                <div
+                                    class="md:w-[49%] md:flex hidden flex-col bg-theme-accent-2 rounded-[15px] p-8 gap-6">
+                                    <!-- icons row -->
+                                    <div class="w-full flex justify-start items-center">
+                                        <div class="-rotate-45">
+                                            <svg class="animated" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.105431 2.18998C0.0301532 0.988687 1.02531 -0.00647222 2.2266 0.0688056L19.4961 1.15097C21.2148 1.25867 22.0029 3.34358 20.7852 4.56127L4.5979 20.7486C3.3802 21.9663 1.2953 21.1781 1.1876 19.4594L0.105431 2.18998Z"
+                                                    fill="#8750f7"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="rotate-[135deg] -translate-x-3">
+                                            <svg class="animated" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.105431 2.18998C0.0301532 0.988687 1.02531 -0.00647222 2.2266 0.0688056L19.4961 1.15097C21.2148 1.25867 22.0029 3.34358 20.7852 4.56127L4.5979 20.7486C3.3802 21.9663 1.2953 21.1781 1.1876 19.4594L0.105431 2.18998Z"
+                                                    fill="#8750f7"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- card paragraph -->
+                                    <div class="w-full">
+                                        <p class="w-full text-start text-white">Taylor is a professional Designer he
+                                            really helps my business by providing value to my business. Taylor is a
+                                            professional Designer he really helps my business by providing value to my
+                                            business. </p>
+                                    </div>
+                                    <!-- card profile -->
+                                    <div class="w-full flex gap-4">
+                                        <!-- photo -->
+                                        <div class="w-[55px] h-[55px]">
+                                            <img class="w-full h-full rounded-[50%] object-cover"
+                                                src="../../assets/images/testi-2.webp" alt="">
+                                        </div>
+                                        <!-- bio -->
+                                        <div class="text-start">
+                                            <h4 class="text-[18px] text-white font-[700]">Tim Bailey</h4>
+                                            <span class="text-[14px] text-white">SEO Specialist, Theme Junction</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Questions and Answers Section -->
+        <section class="w-full flex justify-center items-center bg-theme-accent-1 py-32">
+            <!-- container -->
+            <div class="xl:w-[75%] md:w-[95%] w-[90%]">
+                <!-- My Questions and Answers title -->
+                <div class="w-full flex justify-center items-center pb-16">
+                    <div class="text-center">
+                        <h2
+                            class="lg:text-[42px] text-[32px] bg-[linear-gradient(to_right,#8750f7_0%,#ffffff_100%)] text-transparent font-[700] leading-none bg-clip-text capitalize">
+                            Your Questions and Answers
+                        </h2>
+                    </div>
+                </div>
+                <!-- My Questions and Answers cards -->
+                <div class="w-full flex flex-col gap-6">
+                    <!-- Question card #1 -->
+                    <div
+                        class="w-full flex flex-col rounded-[15px] transition duration-500 border border-theme-secondary active-color gap-6">
+                        <!-- Questions row -->
+                        <div id="questionBox"
+                            class="w-full flex justify-between items-center cursor-pointer md:py-5 py-4 md:px-8 px-4"
+                            onclick="dropDownAction(event)">
+                            <button
+                                class="text-white text-left pointer-events-none md:text-[20px] text-[18px] tracking-wide font-[500]">How
+                                do I get
+                                Quotation for my project?
+                            </button>
+                            <i
+                                class="fa-solid fa-minus fa-lg text-white transition duration-500 pointer-events-none"></i>
+                        </div>
+                        <!-- Answers row -->
+                        <div class="w-full hidden active pb-5 md:px-8 px-4">
+                            <p class="w-full text-white tracking-wide">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                    <!-- Question card #2 -->
+                    <div
+                        class="w-full flex flex-col rounded-[15px] transition duration-500 border border-theme-secondary gap-6">
+                        <!-- Questions row -->
+                        <div id="questionBox"
+                            class="w-full flex justify-between items-center cursor-pointer md:py-5 py-4 md:px-8 px-4"
+                            onclick="dropDownAction(event)">
+                            <button
+                                class="text-white text-left pointer-events-none md:text-[20px] text-[18px] tracking-wide font-[500]">How
+                                many landing page can I work with your project?</button>
+                            <i
+                                class="fa-solid fa-plus fa-lg text-white transition duration-500 pointer-events-none"></i>
+                        </div>
+                        <!-- Answers row -->
+                        <div class="w-full hidden pb-5 md:px-8 px-4">
+                            <p class="w-full text-white tracking-wide">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                    <!-- Question card #3 -->
+                    <div
+                        class="w-full flex flex-col rounded-[15px] transition duration-500 border border-theme-secondary gap-6">
+                        <!-- Questions row -->
+                        <div id="questionBox"
+                            class="w-full flex justify-between items-center cursor-pointer md:py-5 py-4 md:px-8 px-4"
+                            onclick="dropDownAction(event)">
+                            <button
+                                class="text-white text-left pointer-events-none md:text-[20px] text-[18px] tracking-wide font-[500]">Can
+                                I use your project for my clients?</button>
+                            <i
+                                class="fa-solid fa-plus fa-lg text-white transition duration-500 pointer-events-none"></i>
+                        </div>
+                        <!-- Answers row -->
+                        <div class="w-full hidden pb-5 md:px-8 px-4">
+                            <p class="w-full text-white tracking-wide">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                    <!-- Question card #4 -->
+                    <div
+                        class="w-full flex flex-col rounded-[15px] transition duration-500 border border-theme-secondary gap-6">
+                        <!-- Questions row -->
+                        <div id="questionBox"
+                            class="w-full flex justify-between items-center cursor-pointer md:py-5 py-4 md:px-8 px-4"
+                            onclick="dropDownAction(event)">
+                            <button
+                                class="text-white text-left pointer-events-none md:text-[20px] text-[18px] tracking-wide font-[500]">Will
+                                growth products slow down my products?</button>
+                            <i
+                                class="fa-solid fa-plus fa-lg text-white transition duration-500 pointer-events-none"></i>
+                        </div>
+                        <!-- Answers row -->
+                        <div class="w-full hidden pb-5 md:px-8 px-4">
+                            <p class="w-full text-white tracking-wide">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                    <!-- Question card #5 -->
+                    <div
+                        class="w-full flex flex-col rounded-[15px] transition duration-500 border border-theme-secondary gap-6">
+                        <!-- Questions row -->
+                        <div id="questionBox"
+                            class="w-full flex justify-between items-center cursor-pointer md:py-5 py-4 md:px-8 px-4"
+                            onclick="dropDownAction(event)">
+                            <button
+                                class="text-white text-left pointer-events-none md:text-[20px] text-[18px] tracking-wide font-[500]">Can
+                                I use your project for my clients?</button>
+                            <i
+                                class="fa-solid fa-plus fa-lg text-white transition duration-500 pointer-events-none"></i>
+                        </div>
+                        <!-- Answers row -->
+                        <div class="w-full hidden pb-5 md:px-8 px-4">
+                            <p class="w-full text-white tracking-wide">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Lets have a chat row -->
+        <div class="w-full flex justify-center items-center py-32">
+            <!-- container -->
+            <div class="xl:w-[70%] md:w-[95%] w-[90%] flex flex-col gap-6">
+                <!-- Lets have a chat title -->
+                <div class="w-full flex flex-col gap-2">
+                    <p class="text-[22px] text-white">Want to start a project?</p>
+                    <h3
+                        class="have-chat w-full flex xl:justify-center justify-start lg:text-[110px] md:text-[65px] text-[42px] font-[700] md:leading-none md:tracking-wide bg-[linear-gradient(to_right,#8750f7_0%,#ffffff_100%)] bg-clip-text text-transparent">
+                        Let's have a chat</h3>
+                </div>
+                <!-- Lets have a chat content -->
+                <div class="w-full flex md:justify-end justify-start items-center">
+                    <a class="md:text-[32px] text-[18px] text-white flex no-underline relative gap-4 group hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-14 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:border before:border-white before:absolute"
+                        href="https://mail.google.com/mail/u/0/">
+                        mahdi.gholami8182@gmail.com
+                        <div
+                            class="w-[43px] h-[43px] flex justify-center items-center rounded-[50%] transition duration-500 -rotate-45 border-2 border-white group-hover:rotate-0 group-hover:bg-primary">
+                            <i class="fa-solid fa-arrow-right fa-xs text-white"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="w-full flex justify-center items-center bg-theme-accent-1 py-14">
+        <!-- container -->
+        <div class="w-[90%] flex flex-col gap-10">
+            <!-- social media row -->
+            <div class="w-full flex justify-center items-center">
+                <ul class="flex gap-5">
+                    <li
+                        class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-theme-secondary group">
+                        <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                            href="https://www.facebook.com/">
+                            <i
+                                class="fa-brands fa-facebook-f fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                        </a>
+                    </li>
+                    <li
+                        class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-theme-secondary group">
+                        <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                            href="https://www.linkedin.com/in/mahdi-gholami-developer/">
+                            <i
+                                class="fa-brands fa-linkedin-in fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                        </a>
+                    </li>
+                    <li
+                        class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-theme-secondary group">
+                        <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                            href="https://github.com/MhdiGholami">
+                            <i
+                                class="fa-brands fa-github fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                        </a>
+                    </li>
+                    <li
+                        class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-theme-secondary group">
+                        <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                            href="https://www.instagram.com/mahdi_gholami_web/profilecard/?igsh=OGJ0YWlmZWh0YnN1">
+                            <i
+                                class="fa-brands fa-instagram fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- website logo row -->
+            <div class="w-full flex justify-center items-center">
+                <a class="w-[75px]" href="">
+                    <img class="w-full h-full object-cover" src="../../assets/images/website-logo.png" alt="">
+                </a>
+            </div>
+            <!-- links pages row -->
+            <div class="w-full flex justify-center items-center">
+                <div class="flex">
+                    <ul class="flex md:gap-10 gap-4">
+                        <li class="group cursor-pointer"><a
+                                class="font-[700] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="index.html#section2">Services</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[700] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="pages/portfolio/portfolio.html">Works</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[700] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="index.html#section5">Skills</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[700] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="index.html#section4">Experience</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[700] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="index.html#section1">Bio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

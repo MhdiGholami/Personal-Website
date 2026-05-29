@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mahdi Gholami Front-end Developer</title>
+
+    <!-- CSS link -->
+    <link href="../../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/styles/global.css">
+
+    <!-- Awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Flaticon cdn link -->
+    <!-- <link rel="stylesheet" href="https://cdn.flaticon.com/path-to-your-icon-font.css"> -->
+
+    <!-- Swiper CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <!-- Swiper JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+</head>
+
+<body class="w-full h-auto bg-theme-accent-1 relative">
+    <!-- Scroll top button -->
+    <div id="scroll-button2"
+        class="w-[45px] h-[45px] hidden justify-center items-center cursor-pointer fixed z-50 bottom-[4%] right-[2%] active-scrollBtn rounded-[50%] border-2 border-theme-secondary">
+        <svg class="w-[44px] h-[44px] flex justify-center items-center -rotate-90 absolute rounded-[50%]">
+            <circle class="z-50"></circle>
+        </svg>
+        <i class="fa-solid fa-arrow-up text-primary"></i>
+    </div>
+    <!-- Sticky header -->
+    <header id="sticky-header"
+        class="w-full flex justify-center items-center bg-black transition-all duration-500 fixed z-50 hide">
+        <div class="md:w-[90%] lg:w-[90%] xl:w-[85%] w-[93%]">
+            <div class="w-full flex justify-between items-center py-4">
+                <div class="w-[6%] lg:w-[7%]">
+                    <figure class="w-[60px] h-[60px]">
+                        <img class="w-full object-cover" src="../../assets/images/website-logo.png" alt="">
+                    </figure>
+                </div>
+
+                <div class="w-[45%] lg:w-[60%] lg:flex hidden justify-end items-center">
+                    <ul class="w-[80%] flex gap-10">
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="../../index.html">Home</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="../../index.html#section3">Projects</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="../../index.html#section4">Resume</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="../../index.html#section5">Skills</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="">About</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="../../pages/contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="w-[30%] lg:w-[25%] lg:flex hidden justify-end items-center">
+                    <ul class="w-[65%] lg:w-[68%] flex justify-evenly items-center gap-2">
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://www.facebook.com/">
+                                <i
+                                    class="fa-brands fa-facebook-f fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://www.linkedin.com/in/mahdi-gholami-developer/">
+                                <i
+                                    class="fa-brands fa-linkedin-in fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://github.com/MhdiGholami">
+                                <i
+                                    class="fa-brands fa-github fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://www.instagram.com/mahdi_gholami_web/profilecard/?igsh=OGJ0YWlmZWh0YnN1">
+                                <i
+                                    class="fa-brands fa-instagram fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ** -->
+                <div class="sm:w-[15%] lg:w-[8%] w-[27%] flex justify-end items-center">
+                    <!-- <div class="flex items-center gap-4">
+                        <span class="font-[500] text-[18px] text-white cursor-pointer">فا</span>
+                        <div class="cursor-pointer">
+                            <i id="changethemIcon" class="fa-regular fa-sun fa-lg text-white" data-theme="false"></i>
+                        </div>
+                    </div> -->
+                    <div class="lg:hidden flex">
+                        <i id="openStickyNavbar" class="fa fa-navicon fa-2xl cursor-pointer transition text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Fixed header -->
+    <header class="w-full flex justify-center items-center absolute z-20">
+        <div class="md:w-[90%] lg:w-[90%] xl:w-[85%] w-[93%]">
+            <div class="w-full flex justify-between items-center sm:pt-10 pt-5">
+                <div class="w-[6%] lg:w-[7%]">
+                    <figure class="w-[60px] h-[60px]">
+                        <img class="w-full object-cover" src="../../assets/images/website-logo.png" alt="">
+                    </figure>
+                </div>
+
+                <div class="w-[45%] lg:w-[60%] lg:flex hidden justify-end items-center">
+                    <ul class="w-[80%] flex gap-10">
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="../../index.html">Home</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="../../index.html#section3">Projects</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="../../index.html#section4">Resume</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="../../index.html#section5">Skills</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="">About</a></li>
+                        <li class="group cursor-pointer"><a
+                                class="font-[500] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-8 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                href="../../pages/contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="w-[30%] lg:w-[25%] lg:flex hidden justify-end items-center">
+                    <ul class="w-[65%] lg:w-[68%] flex justify-evenly items-center gap-2">
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://www.facebook.com/">
+                                <i
+                                    class="fa-brands fa-facebook-f fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://www.linkedin.com/in/mahdi-gholami-developer/">
+                                <i
+                                    class="fa-brands fa-linkedin-in fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://github.com/MhdiGholami">
+                                <i
+                                    class="fa-brands fa-github fa-md lg:fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                        <li
+                            class="w-[36px] h-[36px] flex justify-center items-center relative cursor-pointer rounded-[50%] transition duration-1000 border border-primary group">
+                            <a class="w-full h-full flex justify-center items-center rounded-[50%] relative before:absolute before:w-full before:h-full before:scale-0 before:transition before:duration-300 before:rounded-[50%] before:bg-primary group-hover:before:scale-110"
+                                href="https://www.instagram.com/mahdi_gholami_web/profilecard/?igsh=OGJ0YWlmZWh0YnN1">
+                                <i
+                                    class="fa-brands fa-instagram fa-lg text-primary transition duration-300 z-30 group-hover:text-white"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ** -->
+                <div class="sm:w-[15%] lg:w-[8%] w-[27%] flex justify-end items-center">
+                    <!-- <div class="flex items-center gap-4">
+                        <span class="font-[500] text-[18px] text-white cursor-pointer">فا</span>
+                        <div class="cursor-pointer">
+                            <i id="changethemIcon" class="fa-regular fa-sun fa-lg text-white" data-theme="false"></i>
+                        </div>
+                    </div> -->
+                    <div class="lg:hidden flex">
+                        <i id="openNavbar" class="fa fa-navicon fa-2xl cursor-pointer transition text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main website codes -->
+    <main class="w-full">
+        <!-- mobile & tablet sidebar menu -->
+        <div
+            class="sidebar-parent w-full h-[100vh] flex justify-end fixed z-50 transition duration-300 ease-in top-0 right-0 lg:hidden">
+            <!-- sidebar -->
+            <div class="md:w-[30%] w-[45%] flex flex-col items-center bg-theme-accent-1 gap-5">
+                <!-- close button row -->
+                <div class="w-[80%] flex justify-end items-center py-6">
+                    <!-- close button -->
+                    <div class="">
+                        <i id="closeNavbar" class="fa-solid fa-xmark fa-xl text-white"></i>
+                    </div>
+                </div>
+                <!-- links pages row -->
+                <div class="w-[80%]">
+                    <div class="w-full flex justify-end text-right">
+                        <ul class="flex flex-col gap-6">
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="../../index.html">Home</a></li>
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="../../index.html#section3">Projects</a></li>
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="../../index.html#section4">Resume</a></li>
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="../../index.html#section5">Skills</a></li>
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="">About</a></li>
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="../../pages/contact/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Section -->
+        <section id="section1" class="w-full h-[300px] lg:h-auto">
+            <!-- My Portfolio title -->
+            <div class="w-full h-full flex justify-center items-center relative overflow-hidden">
+                <img class="w-full h-full scale-105 object-cover portfolioImage-filter"
+                    src="../../assets/images/portfolio-background.jpg" alt="">
+                <!-- container -->
+                <div class="md:w-[90%] lg:w-[85%] w-[90%] absolute">
+                    <div class="w-full flex justify-center items-center pt-18">
+                        <div class="">
+                            <h1
+                                class="font-[700] md:text-[42px] lg:text-[50px] text-[36px] text-white leading-[1.5] capitalize">
+                                my portfolio</h1>
+                            <div class="w-full flex justify-center items-center pt-2">
+                                <div class="flex gap-2">
+                                    <a class="group" href="../home/index.html" title="Go to Home">
+                                        <span
+                                            class="text-white lg:text-[18px] text-[16px] font-[400] leading-none capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[1px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-white before:absolute">home</span>
+                                    </a>
+                                    <span class="text-white">></span>
+                                    <span
+                                        class="text-white lg:text-[18px] text-[16px] font-[400] leading-none capitalize">my
+                                        portfolio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- My Portfolio content -->
+            <div
+                class="w-full h-full flex justify-center items-center py-32 relative before:content-[''] before:absolute before:w-[322px] before:h-[308px] before:rounded-[50%] before:blur-[180px] before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)]">
+                <!-- container -->
+                <div class="md:w-[90%] lg:w-[85%] w-[90%]">
+                    <!-- items container -->
+                    <div class="w-full grid grid-cols-2 gap-12">
+                        <!-- item -->
+                        <div class="flex justify-center items-end rounded-[10px] bg-theme-accent-2 relative pt-8 group">
+                            <img class="w-[88%] object-cover" src="../../assets/images/portfolio-3.jpg" alt="">
+                            <a class="w-[94%] flex justify-between items-center rounded-[15px] absolute bg-[linear-gradient(260deg,#2a1454_0%,#8750f7_100%)] p-10 transition-all duration-500 opacity-0 bottom-0 group-hover:opacity-100 group-hover:bottom-4"
+                                href="">
+                                <h3 class="text-[26px] text-white font-[700] leading-1.5 capitalize">deloitte</h3>
+                                <i
+                                    class="fa-solid fa-arrow-right text-[32px] text-white transition duration-500 group-hover:rotate-315"></i>
+                            </a>
+                        </div>
+                        <!-- item -->
+                        <div class="flex justify-center items-end rounded-[10px] bg-theme-accent-2 relative pt-8 group">
+                            <img class="w-[88%] object-cover" src="../../assets/images/portfolio-4.jpg" alt="">
+                            <a class="w-[94%] flex justify-between items-center rounded-[15px] absolute bg-[linear-gradient(260deg,#2a1454_0%,#8750f7_100%)] p-10 transition-all duration-500 opacity-0 bottom-0 group-hover:opacity-100 group-hover:bottom-4"
+                                href="">
+                                <h3 class="text-[26px] text-white font-[700] leading-1.5 capitalize">new age</h3>
+                                <i
+                                    class="fa-solid fa-arrow-right text-[32px] text-white transition duration-500 group-hover:rotate-315"></i>
+                            </a>
+                        </div>
+                        <!-- item -->
+                        <div class="flex justify-center items-end rounded-[10px] bg-theme-accent-2 relative pt-8 group">
+                            <img class="w-[88%] object-cover" src="../../assets/images/portfolio-2.jpg" alt="">
+                            <a class="w-[94%] flex justify-between items-center rounded-[15px] absolute bg-[linear-gradient(260deg,#2a1454_0%,#8750f7_100%)] p-10 transition-all duration-500 opacity-0 bottom-0 group-hover:opacity-100 group-hover:bottom-4"
+                                href="">
+                                <h3 class="text-[26px] text-white font-[700] leading-1.5 capitalize">sebastian</h3>
+                                <i
+                                    class="fa-solid fa-arrow-right text-[32px] text-white transition duration-500 group-hover:rotate-315"></i>
+                            </a>
+                        </div>
+                        <!-- item -->
+                        <div class="flex justify-center items-end rounded-[10px] bg-theme-accent-2 relative pt-8 group">
+                            <img class="w-[88%] object-cover" src="../../assets/images/portfolio-1.jpg" alt="">
+                            <a class="w-[94%] flex justify-between items-center rounded-[15px] absolute bg-[linear-gradient(260deg,#2a1454_0%,#8750f7_100%)] p-10 transition-all duration-500 opacity-0 bottom-0 group-hover:opacity-100 group-hover:bottom-4"
+                                href="">
+                                <h3 class="text-[26px] text-white font-[700] leading-1.5 capitalize">mochnix</h3>
+                                <i
+                                    class="fa-solid fa-arrow-right text-[32px] text-white transition duration-500 group-hover:rotate-315"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="w-full flex justify-center items-center bg-theme-accent-2 py-14">
+            <!-- container -->
+            <div class="w-[90%] flex flex-col gap-10">
+                <!-- website logo row -->
+                <div class="w-full flex justify-center items-center">
+                    <a class="w-[75px]" href="">
+                        <img class="w-full h-full object-cover" src="../../assets/images/website-logo.png" alt="">
+                    </a>
+                </div>
+                <!-- links pages row -->
+                <div class="w-full flex justify-center items-center">
+                    <div class="flex">
+                        <ul class="flex md:gap-10 gap-4">
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="../../index.html#section2">Services</a></li>
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="../../pages/portfolio/portfolio.html">Works</a></li>
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="../../index.html#section5">Skills</a></li>
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="../../index.html#section4">Experience</a></li>
+                            <li class="group cursor-pointer"><a
+                                    class="font-[700] text-white capitalize relative group-hover:before:scale-x-100 before:w-full before:h-[2px] before:rounded-[4px] before:mt-6 before:left-0 before:origin-left before:scale-x-0 before:duration-300 before:delay-75 ease-in-out before:bg-[linear-gradient(260deg,#8750f7_0%,#8750f7_100%)] before:absolute py-2"
+                                    href="../../index.html#section1">Bio</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../../assets/js/script.js"></script>
+    </main>
+</body>
